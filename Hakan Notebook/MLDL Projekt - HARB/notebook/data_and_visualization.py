@@ -25,8 +25,11 @@ class Data:
         #Get the data labels/classes
         labels = data['class']
 
-        #Delete feature - class 
+        #Delete feature - class
         data.pop('class')
+        data.pop('Person')
+        data.pop('NA')
+        
 
         #Get the data features
         features = data.columns.values
